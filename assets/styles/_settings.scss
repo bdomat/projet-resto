@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Allura";
+    src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins Medium";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+$font1: "Allura", serif;
+$font2: "Poppins Medium", sans-serif;
+$font3: "Roboto light", sans-serif;
+$white1: #EEEEEE;
+$grey1: #21201E;
+$grey2: #595956;
+$brown1: #8F633D;
+$black1:#000000;
+
+@mixin typescript-brown{
+    font-family: $font1;
+    text-transform: capitalize;
+    color: $brown1;
+}
+
+@mixin title{
+    font-family: $font2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+@mixin focus{
+    font-family: $font3;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+@mixin container{
+    width: 70%;
+    margin:0 auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+
+a, a:visited{
+    color: $white1;
+}
+body{
+    background-color: $grey1;
+}
+.btn{
+    background-color: $black1;
+    width: 170px;
+    height: 45px;
+    cursor: pointer;
+    @include title;
+}
