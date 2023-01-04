@@ -33,9 +33,11 @@ header{
         display: flex;
         justify-content: center;
         align-items:center;
+        flex-direction:column;
         text-align:center;
         color:$white1;
         height: 55vh;
+        padding: 25vw 0vw;
         h1{
             @include title;
             font-size: 5rem;
@@ -45,6 +47,13 @@ header{
         span{
             @include typescript-brown;
             font-size:3rem;
+        }
+        .centered-img{
+            padding: 60px 0px;
+        }
+        p{
+            @include title;
+            letter-spacing: 5px;
         }
     }
 }

@@ -42,6 +42,57 @@ body {
   letter-spacing: 2px;
 }
 
+.section1 {
+  height: 50vh;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: row;
+}
+.section1 .p-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 15px;
+  padding: 10px;
+  border: 1px dashed #8F633D;
+}
+.section1 .p-left h2 {
+  font-family: "Poppins Medium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 3vh;
+  padding-bottom: 15px;
+}
+.section1 .p-left h2 span {
+  font-family: "Allura", serif;
+  text-transform: capitalize;
+  color: #8F633D;
+  font-size: 1.7rem;
+}
+.section1 .p-left p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto light", sans-serif;
+  text-align: center;
+  padding: 30px 0;
+}
+.section1 .p-left .avatar {
+  width: 90px;
+  border-radius: 50%;
+}
+.section1 .right-img {
+  width: 50%;
+  background-image: url(../img/store-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 header {
   background: url(../img/bg-slider-06.jpg);
   background-position: center;
@@ -81,9 +132,11 @@ header .header-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   color: #EEEEEE;
   height: 55vh;
+  padding: 25vw 0vw;
 }
 header .header-content h1 {
   font-family: "Poppins Medium", sans-serif;
@@ -98,4 +151,13 @@ header .header-content span {
   text-transform: capitalize;
   color: #8F633D;
   font-size: 3rem;
+}
+header .header-content .centered-img {
+  padding: 60px 0px;
+}
+header .header-content p {
+  font-family: "Poppins Medium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  letter-spacing: 5px;
 }/*# sourceMappingURL=index.css.map */
