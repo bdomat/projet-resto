@@ -93,6 +93,94 @@ body {
   background-size: cover;
 }
 
+.section2 {
+  background-image: url(../img/bg-menu-01.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 5vh;
+}
+.section2 .container2 {
+  width: 70%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.section2 .menu-header {
+  text-align: center;
+  width: 100%;
+}
+.section2 .menu-header h2 {
+  font-family: "Allura", serif;
+  text-transform: capitalize;
+  color: #8F633D;
+  font-size: 2rem;
+  padding: 3vh 0vh 3vh 0vh;
+}
+.section2 .menu-header img {
+  padding-bottom: 3vh;
+}
+.section2 .menu-header ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: "Roboto light", sans-serif;
+  color: #EEEEEE;
+}
+.section2 .menu-header ul li {
+  margin: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.section2 .food-menu {
+  width: 100%;
+  background-color: #EEEEEE;
+  border-top: 3px solid #8F633D;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section2 .food-menu ul {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 10px;
+}
+.section2 .food-menu ul li {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px dashed #595956;
+}
+.section2 .food-menu ul li .dish-item-img {
+  width: 70px;
+  border-radius: 50%;
+}
+.section2 .food-menu ul li .plate-desc {
+  padding: 10px;
+}
+.section2 .food-menu ul li .plate-desc span {
+  font-family: "Roboto light", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.section2 .food-menu ul li .plate-desc p {
+  font-family: "Roboto light", sans-serif;
+  font-size: 0.8rem;
+}
+.section2 .food-menu ul li .plate-price {
+  font-family: "Roboto light", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #8F633D;
+}
+
 header {
   background: url(../img/bg-slider-06.jpg);
   background-position: center;

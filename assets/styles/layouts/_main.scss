@@ -44,3 +44,83 @@
         background-size: cover;
     }
 }
+
+.section2 {
+    background-image: url(../img/bg-menu-01.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 5vh;
+    .container2{
+        width: 70%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .menu-header{
+        text-align: center;
+        width: 100%;
+        h2{
+            @include typescript-brown;
+            font-size: 2rem;
+            padding: 3vh 0vh 3vh 0vh;
+        }
+        img{
+            padding-bottom: 3vh;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            font-family: $font3;
+            color: $white1;
+            li{
+                margin: 20px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid $white1;
+            }
+        }
+    }
+    .food-menu{
+        width: 100%;
+        background-color: $white1;
+        border-top: 3px solid $brown1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        ul{
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            margin: 10px;
+            li{
+                display: grid;
+                grid-template-columns: 1fr 8fr 1fr;
+                align-items: center;
+                width: 100%;
+                padding: 20px;
+                border-bottom: 1px dashed $grey2;
+                .dish-item-img{
+                    width: 70px;
+                    border-radius: 50%;
+                }
+                .plate-desc{
+                    padding: 10px;
+                    span{
+                        @include focus;
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-family: $font3;
+                        font-size: 0.8rem;
+                    }
+                }
+                .plate-price{
+                    @include price-brown;
+                }
+            }
+        }
+    }
+}

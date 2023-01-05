@@ -25,6 +25,13 @@ $black1:#000000;
     text-transform: capitalize;
     color: $brown1;
 }
+@mixin price-brown{
+    font-family: $font3;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: $brown1;
+}
 
 @mixin title{
     font-family: $font2;
