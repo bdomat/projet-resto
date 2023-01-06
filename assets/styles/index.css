@@ -42,6 +42,11 @@ body {
   letter-spacing: 2px;
 }
 
+.centered-img {
+  padding: 30px 0px;
+  text-align: center;
+}
+
 .section1 {
   height: 50vh;
   background-color: #EEEEEE;
@@ -97,7 +102,7 @@ body {
   background-image: url(../img/bg-menu-01.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center bottom -20%;
   padding-bottom: 5vh;
 }
 .section2 .container2 {
@@ -181,6 +186,106 @@ body {
   color: #8F633D;
 }
 
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+.section3 .resa {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  padding: 100px;
+  color: #EEEEEE;
+  text-align: center;
+  max-width: 1100px;
+}
+.section3 .resa h2 {
+  font-family: "Poppins Medium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.section3 .resa h2 .typescript-title {
+  font-family: "Allura", serif;
+  text-transform: capitalize;
+  color: #8F633D;
+  font-size: 2rem;
+}
+.section3 .resa span {
+  font-family: "Roboto light", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #8F633D;
+  font-weight: 600;
+  padding: 20px 0px;
+  font-size: 0.8rem;
+}
+.section3 .resa .time-open {
+  background-color: #000000;
+  padding: 10px;
+}
+.section3 .resa .time-open .hours {
+  border: 1px dotted #595956;
+  padding: 10px;
+}
+.section3 .resa .time-open .hours h2 {
+  font-family: "Poppins Medium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.section3 .resa .time-open .hours h2 .typescript-title {
+  font-family: "Allura", serif;
+  text-transform: capitalize;
+  color: #8F633D;
+  font-size: 3rem;
+}
+.section3 .resa .time-open .hours span {
+  font-family: "Roboto light", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #8F633D;
+  font-weight: 600;
+  padding: 20px 0px;
+  font-size: 0.8rem;
+}
+.section3 .resa .time-open .hours p {
+  font-family: "Roboto light", sans-serif;
+  font-size: 0.7rem;
+}
+.section3 .resa .booking {
+  background-color: #EEEEEE;
+  padding: 20px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+.section3 .resa .booking form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.section3 .resa .booking form > * {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #21201E;
+  margin: 10px;
+  padding: 5px;
+}
+.section3 .resa .booking button {
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin: 30px 0;
+  padding: 5px 20px;
+  background-color: #000000;
+  color: #EEEEEE;
+  border-radius: 60px;
+  width: 200px;
+  height: 50px;
+}
+
 header {
   background: url(../img/bg-slider-06.jpg);
   background-position: center;
@@ -239,9 +344,6 @@ header .header-content span {
   text-transform: capitalize;
   color: #8F633D;
   font-size: 3rem;
-}
-header .header-content .centered-img {
-  padding: 60px 0px;
 }
 header .header-content p {
   font-family: "Poppins Medium", sans-serif;

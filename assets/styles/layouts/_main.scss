@@ -49,7 +49,7 @@
     background-image: url(../img/bg-menu-01.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center bottom -20%;;
     padding-bottom: 5vh;
     .container2{
         width: 70%;
@@ -123,4 +123,93 @@
             }
         }
     }
+}
+
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    .resa{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    padding: 100px;
+    color: $white1;
+    text-align: center;
+    max-width: 1100px;
+    h2{
+        @include title;
+        .typescript-title{
+            @include typescript-brown;
+            font-size:2rem;
+        }
+    }
+    span{
+        @include focus;
+        color: $brown1;
+        font-weight: 600;
+        padding: 20px 0px;
+        font-size: 0.8rem;
+    }
+    .time-open{
+        background-color: $black1;
+        padding: 10px;
+        .hours{
+        border: 1px dotted $grey2;
+        padding: 10px;
+        h2{
+            @include title;
+            .typescript-title{
+                @include typescript-brown;
+                font-size:3rem;
+            }
+        }
+        span{
+            @include focus;
+            color: $brown1;
+            font-weight: 600;
+            padding: 20px 0px;
+            font-size: 0.8rem;
+        }
+        p{
+            font-family: $font3;
+            font-size: 0.7rem;
+        }
+        }
+    }
+    .booking{
+        background-color: $white1;
+        padding: 20px;
+        color: $black1;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin: auto 0;
+
+        form{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            > * {
+                background: none;
+                border: none;
+                border-bottom: 1px solid $grey1;
+                margin: 10px;
+                padding: 5px;
+            }
+        }
+        button{
+            font-family: $font2;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin: 30px 0;
+            padding: 5px 20px;
+            background-color: $black1;
+            color: $white1;
+            border-radius: 60px;
+            width: 200px;
+            height: 50px;
+        }
+    }
+}
 }

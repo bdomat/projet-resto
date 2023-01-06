@@ -48,9 +48,6 @@ header{
             @include typescript-brown;
             font-size:3rem;
         }
-        .centered-img{
-            padding: 60px 0px;
-        }
         p{
             @include title;
             letter-spacing: 5px;
