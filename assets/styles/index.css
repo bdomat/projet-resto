@@ -286,6 +286,124 @@ body {
   height: 50px;
 }
 
+.section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  flex-direction: column;
+  text-align: center;
+}
+.section4 h2 {
+  font-family: "Poppins Medium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #EEEEEE;
+}
+.section4 .typescript-title {
+  font-family: "Allura", serif;
+  text-transform: capitalize;
+  color: #8F633D;
+}
+.section4 .our-event {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 58% 42%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b" "c b";
+}
+.section4 .our-event .event-left {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  background-color: #EEEEEE;
+}
+.section4 .our-event .event-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto 0px;
+  background-color: #EEEEEE;
+}
+.section4 .our-event .event-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section4 .our-event .event-date .date-content {
+  background-color: #000000;
+  color: #EEEEEE;
+  height: 86px;
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 22px;
+  font-family: "Roboto light", sans-serif;
+}
+.section4 .our-event .event-date .date-content h6 {
+  font-size: 1.7rem;
+}
+.section4 .our-event .event-desc {
+  background-color: #EEEEEE;
+  font-family: "Roboto light", sans-serif;
+  color: #000000;
+  padding: 30px 20px;
+}
+.section4 .our-event .event-desc h6 {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-left: 8px;
+}
+.section4 .our-event .event-desc p {
+  font-size: 0.9rem;
+  color: #21201E;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.section4 .our-event .event-desc p i {
+  margin-right: 3px;
+  font-size: 0.7rem;
+  transform: translateY(-2px);
+}
+.section4 .our-event .event-desc p i:nth-child(2) {
+  margin-left: 10px;
+}
+.section4 .our-event .event-desc h5 {
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.section4 .our-event .event1 {
+  grid-area: a;
+  text-align: left;
+  background-image: url("../img/event-01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.section4 .our-event .event2 {
+  grid-area: b;
+  text-align: center;
+  background-image: url("../img/event-02.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+.section4 .our-event .event2 .event-right {
+  height: 100%;
+}
+.section4 .our-event .event3 {
+  grid-area: c;
+  text-align: left;
+  background-image: url("../img/event-03.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 header {
   background: url(../img/bg-slider-06.jpg);
   background-position: center;
